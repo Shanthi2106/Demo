@@ -12,9 +12,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="PALINDROME")
 public class Palindrome implements Serializable {
-	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	@Column(name="LONGESTPALINDROME")
