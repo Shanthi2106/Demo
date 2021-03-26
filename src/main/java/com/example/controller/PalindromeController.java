@@ -18,13 +18,6 @@ public class PalindromeController {
 	@Autowired
 	PalindromeService palindromeService;
 
-	/*
-	 * private ClientService clientService;
-	 * 
-	 * @Autowired public void setClientService(ClientService clientService) {
-	 * this.clientService = clientService; }
-	 */
-
 	@Autowired
 	PalindromeRepository palindromeRepository;
 
@@ -40,11 +33,5 @@ public class PalindromeController {
 		palindromeRepository.save(p);
 		return result;
 	}
-
-	/*
-	 * @RequestMapping(value = "registration/add", method = RequestMethod.POST)
-	 * public String addUser(@ModelAttribute Palindrome palindrome){
-	 * this.clientService.addClient(palindrome); return "home"; }
-	 */
 
 }

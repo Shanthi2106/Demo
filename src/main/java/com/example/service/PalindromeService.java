@@ -30,6 +30,6 @@ public class PalindromeService {
 			}
 
 		}
-		return printSubStr(str, start, maxLength - 1);
+		return printSubStr(str, start, start+maxLength - 1);
 	}
 }
